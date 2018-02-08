@@ -10,8 +10,8 @@ class History extends Component {
     currentLine:0,
     lineOne:{
       one:"Un savoir faire légendaire",
-      two:"Du papier de qualité imprimé en France",
-      three:"Le respect de l'environnement comme crédo"
+      two:"Le respect de l'environnement comme crédo",
+      three:"Du papier de qualité imprimé en France"
     },
     lineTwo:{
       one:"Du papier de qualité imprimé en France",
@@ -72,7 +72,8 @@ class History extends Component {
         this.setState({ currentLine:this.state.currentLine-1 })
       }
 
-    }, 2500);
+    }, 2500)
+
   }
 
   redirection = (page, fromNavbar = false) => {
@@ -85,6 +86,7 @@ class History extends Component {
     }else {
       this.setState({ redirection:page })
     }
+
   }
 
   componentDidUpdate(prevProps, prevState) {

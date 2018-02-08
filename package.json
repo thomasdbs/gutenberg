@@ -14,11 +14,11 @@
     "react-tilt": "^0.1.4"
   },
   "repository": {
-      "type": "git",
-      "url": "git+https://github.com/thomasdbs/gutenberg.git"
+    "type": "git",
+    "url": "git+https://github.com/thomasdbs/gutenberg.git"
   },
   "bugs": {
-      "url": "https://github.com/thomasdbs/gutenberg/issues"
+    "url": "https://github.com/thomasdbs/gutenberg/issues"
   },
   "homepage": "https://thomasdbs.github.io/gutenberg",
   "scripts": {
