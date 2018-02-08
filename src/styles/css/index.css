@@ -1,0 +1,603 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', serif; }
+
+.link, .company-name, .bottom-links button, .bottom-links .slider-points .active, .slider-points .bottom-links .active, .item button, .item-left button, .item-right button, .item .slider-points .active, .slider-points .item .active, .item-left .slider-points .active, .slider-points .item-left .active, .item-right .slider-points .active, .slider-points .item-right .active, .product-description .informations button, .product-bag .informations button, .product-full-description .informations button, .product-in-bag .informations button, .bag-pay .informations button, .product-description .informations .slider-points .active, .slider-points .product-description .informations .active, .product-bag .informations .slider-points .active, .slider-points .product-bag .informations .active, .product-full-description .informations .slider-points .active, .slider-points .product-full-description .informations .active, .product-in-bag button, .bag-pay button, .product-in-bag .slider-points .active, .slider-points .product-in-bag .active, .bag-pay .slider-points .active, .slider-points .bag-pay .active, .bag-products .product .details button, .bag-products .product .details .slider-points .active, .slider-points .bag-products .product .details .active, .paying-form form button, .paying-form form .slider-points .active, .slider-points .paying-form form .active, .order-connexion button, .order-connexion .slider-points .active, .slider-points .order-connexion .active {
+  font-size: 14px;
+  display: block;
+  text-decoration: none;
+  margin: 0;
+  padding: 8px;
+  border-radius: 2px;
+  background: none;
+  position: relative;
+  border: 0;
+  vertical-align: middle;
+  transition: color 0.25s;
+  box-sizing: border-box;
+  outline: none;
+  cursor: pointer; }
+  .link::before, .company-name::before, .bottom-links button::before, .bottom-links .slider-points .active::before, .slider-points .bottom-links .active::before, .item button::before, .item-left button::before, .item-right button::before, .item .slider-points .active::before, .slider-points .item .active::before, .item-left .slider-points .active::before, .slider-points .item-left .active::before, .item-right .slider-points .active::before, .slider-points .item-right .active::before, .product-description .informations button::before, .product-bag .informations button::before, .product-full-description .informations button::before, .product-in-bag .informations button::before, .bag-pay .informations button::before, .product-description .informations .slider-points .active::before, .slider-points .product-description .informations .active::before, .product-bag .informations .slider-points .active::before, .slider-points .product-bag .informations .active::before, .product-full-description .informations .slider-points .active::before, .slider-points .product-full-description .informations .active::before, .product-in-bag button::before, .bag-pay button::before, .product-in-bag .slider-points .active::before, .slider-points .product-in-bag .active::before, .bag-pay .slider-points .active::before, .slider-points .bag-pay .active::before, .bag-products .product .details button::before, .bag-products .product .details .slider-points .active::before, .slider-points .bag-products .product .details .active::before, .paying-form form button::before, .paying-form form .slider-points .active::before, .slider-points .paying-form form .active::before, .order-connexion button::before, .order-connexion .slider-points .active::before, .slider-points .order-connexion .active::before, .link::after, .company-name::after, .bottom-links button::after, .bottom-links .slider-points .active::after, .slider-points .bottom-links .active::after, .item button::after, .item-left button::after, .item-right button::after, .item .slider-points .active::after, .slider-points .item .active::after, .item-left .slider-points .active::after, .slider-points .item-left .active::after, .item-right .slider-points .active::after, .slider-points .item-right .active::after, .product-description .informations button::after, .product-bag .informations button::after, .product-full-description .informations button::after, .product-in-bag .informations button::after, .bag-pay .informations button::after, .product-description .informations .slider-points .active::after, .slider-points .product-description .informations .active::after, .product-bag .informations .slider-points .active::after, .slider-points .product-bag .informations .active::after, .product-full-description .informations .slider-points .active::after, .slider-points .product-full-description .informations .active::after, .product-in-bag button::after, .bag-pay button::after, .product-in-bag .slider-points .active::after, .slider-points .product-in-bag .active::after, .bag-pay .slider-points .active::after, .slider-points .bag-pay .active::after, .bag-products .product .details button::after, .bag-products .product .details .slider-points .active::after, .slider-points .bag-products .product .details .active::after, .paying-form form button::after, .paying-form form .slider-points .active::after, .slider-points .paying-form form .active::after, .order-connexion button::after, .order-connexion .slider-points .active::after, .slider-points .order-connexion .active::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    border: 2px solid transparent;
+    width: 0;
+    height: 0; }
+  .link::before, .company-name::before, .bottom-links button::before, .bottom-links .slider-points .active::before, .slider-points .bottom-links .active::before, .item button::before, .item-left button::before, .item-right button::before, .item .slider-points .active::before, .slider-points .item .active::before, .item-left .slider-points .active::before, .slider-points .item-left .active::before, .item-right .slider-points .active::before, .slider-points .item-right .active::before, .product-description .informations button::before, .product-bag .informations button::before, .product-full-description .informations button::before, .product-in-bag .informations button::before, .bag-pay .informations button::before, .product-description .informations .slider-points .active::before, .slider-points .product-description .informations .active::before, .product-bag .informations .slider-points .active::before, .slider-points .product-bag .informations .active::before, .product-full-description .informations .slider-points .active::before, .slider-points .product-full-description .informations .active::before, .product-in-bag button::before, .bag-pay button::before, .product-in-bag .slider-points .active::before, .slider-points .product-in-bag .active::before, .bag-pay .slider-points .active::before, .slider-points .bag-pay .active::before, .bag-products .product .details button::before, .bag-products .product .details .slider-points .active::before, .slider-points .bag-products .product .details .active::before, .paying-form form button::before, .paying-form form .slider-points .active::before, .slider-points .paying-form form .active::before, .order-connexion button::before, .order-connexion .slider-points .active::before, .slider-points .order-connexion .active::before {
+    top: 0;
+    left: 0; }
+  .link::after, .company-name::after, .bottom-links button::after, .bottom-links .slider-points .active::after, .slider-points .bottom-links .active::after, .item button::after, .item-left button::after, .item-right button::after, .item .slider-points .active::after, .slider-points .item .active::after, .item-left .slider-points .active::after, .slider-points .item-left .active::after, .item-right .slider-points .active::after, .slider-points .item-right .active::after, .product-description .informations button::after, .product-bag .informations button::after, .product-full-description .informations button::after, .product-in-bag .informations button::after, .bag-pay .informations button::after, .product-description .informations .slider-points .active::after, .slider-points .product-description .informations .active::after, .product-bag .informations .slider-points .active::after, .slider-points .product-bag .informations .active::after, .product-full-description .informations .slider-points .active::after, .slider-points .product-full-description .informations .active::after, .product-in-bag button::after, .bag-pay button::after, .product-in-bag .slider-points .active::after, .slider-points .product-in-bag .active::after, .bag-pay .slider-points .active::after, .slider-points .bag-pay .active::after, .bag-products .product .details button::after, .bag-products .product .details .slider-points .active::after, .slider-points .bag-products .product .details .active::after, .paying-form form button::after, .paying-form form .slider-points .active::after, .slider-points .paying-form form .active::after, .order-connexion button::after, .order-connexion .slider-points .active::after, .slider-points .order-connexion .active::after {
+    bottom: 0;
+    right: 0; }
+  .link:hover::before, .company-name:hover::before, .bottom-links button:hover::before, .bottom-links .slider-points .active:hover::before, .slider-points .bottom-links .active:hover::before, .item button:hover::before, .item-left button:hover::before, .item-right button:hover::before, .item .slider-points .active:hover::before, .slider-points .item .active:hover::before, .item-left .slider-points .active:hover::before, .slider-points .item-left .active:hover::before, .item-right .slider-points .active:hover::before, .slider-points .item-right .active:hover::before, .product-description .informations button:hover::before, .product-bag .informations button:hover::before, .product-full-description .informations button:hover::before, .product-description .informations .slider-points .active:hover::before, .slider-points .product-description .informations .active:hover::before, .product-bag .informations .slider-points .active:hover::before, .slider-points .product-bag .informations .active:hover::before, .product-full-description .informations .slider-points .active:hover::before, .slider-points .product-full-description .informations .active:hover::before, .product-in-bag button:hover::before, .bag-pay button:hover::before, .product-in-bag .slider-points .active:hover::before, .slider-points .product-in-bag .active:hover::before, .bag-pay .slider-points .active:hover::before, .slider-points .bag-pay .active:hover::before, .bag-products .product .details button:hover::before, .bag-products .product .details .slider-points .active:hover::before, .slider-points .bag-products .product .details .active:hover::before, .paying-form form button:hover::before, .paying-form form .slider-points .active:hover::before, .slider-points .paying-form form .active:hover::before, .order-connexion button:hover::before, .order-connexion .slider-points .active:hover::before, .slider-points .order-connexion .active:hover::before, .link:hover::after, .company-name:hover::after, .bottom-links button:hover::after, .bottom-links .slider-points .active:hover::after, .slider-points .bottom-links .active:hover::after, .item button:hover::after, .item-left button:hover::after, .item-right button:hover::after, .item .slider-points .active:hover::after, .slider-points .item .active:hover::after, .item-left .slider-points .active:hover::after, .slider-points .item-left .active:hover::after, .item-right .slider-points .active:hover::after, .slider-points .item-right .active:hover::after, .product-description .informations button:hover::after, .product-bag .informations button:hover::after, .product-full-description .informations button:hover::after, .product-description .informations .slider-points .active:hover::after, .slider-points .product-description .informations .active:hover::after, .product-bag .informations .slider-points .active:hover::after, .slider-points .product-bag .informations .active:hover::after, .product-full-description .informations .slider-points .active:hover::after, .slider-points .product-full-description .informations .active:hover::after, .product-in-bag button:hover::after, .bag-pay button:hover::after, .product-in-bag .slider-points .active:hover::after, .slider-points .product-in-bag .active:hover::after, .bag-pay .slider-points .active:hover::after, .slider-points .bag-pay .active:hover::after, .bag-products .product .details button:hover::after, .bag-products .product .details .slider-points .active:hover::after, .slider-points .bag-products .product .details .active:hover::after, .paying-form form button:hover::after, .paying-form form .slider-points .active:hover::after, .slider-points .paying-form form .active:hover::after, .order-connexion button:hover::after, .order-connexion .slider-points .active:hover::after, .slider-points .order-connexion .active:hover::after {
+    width: 100%;
+    height: 100%; }
+  .link:hover::before, .company-name:hover::before, .bottom-links button:hover::before, .bottom-links .slider-points .active:hover::before, .slider-points .bottom-links .active:hover::before, .item button:hover::before, .item-left button:hover::before, .item-right button:hover::before, .item .slider-points .active:hover::before, .slider-points .item .active:hover::before, .item-left .slider-points .active:hover::before, .slider-points .item-left .active:hover::before, .item-right .slider-points .active:hover::before, .slider-points .item-right .active:hover::before, .product-description .informations button:hover::before, .product-bag .informations button:hover::before, .product-full-description .informations button:hover::before, .product-description .informations .slider-points .active:hover::before, .slider-points .product-description .informations .active:hover::before, .product-bag .informations .slider-points .active:hover::before, .slider-points .product-bag .informations .active:hover::before, .product-full-description .informations .slider-points .active:hover::before, .slider-points .product-full-description .informations .active:hover::before, .product-in-bag button:hover::before, .bag-pay button:hover::before, .product-in-bag .slider-points .active:hover::before, .slider-points .product-in-bag .active:hover::before, .bag-pay .slider-points .active:hover::before, .slider-points .bag-pay .active:hover::before, .bag-products .product .details button:hover::before, .bag-products .product .details .slider-points .active:hover::before, .slider-points .bag-products .product .details .active:hover::before, .paying-form form button:hover::before, .paying-form form .slider-points .active:hover::before, .slider-points .paying-form form .active:hover::before, .order-connexion button:hover::before, .order-connexion .slider-points .active:hover::before, .slider-points .order-connexion .active:hover::before {
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s; }
+  .link:hover::after, .company-name:hover::after, .bottom-links button:hover::after, .bottom-links .slider-points .active:hover::after, .slider-points .bottom-links .active:hover::after, .item button:hover::after, .item-left button:hover::after, .item-right button:hover::after, .item .slider-points .active:hover::after, .slider-points .item .active:hover::after, .item-left .slider-points .active:hover::after, .slider-points .item-left .active:hover::after, .item-right .slider-points .active:hover::after, .slider-points .item-right .active:hover::after, .product-description .informations button:hover::after, .product-bag .informations button:hover::after, .product-full-description .informations button:hover::after, .product-description .informations .slider-points .active:hover::after, .slider-points .product-description .informations .active:hover::after, .product-bag .informations .slider-points .active:hover::after, .slider-points .product-bag .informations .active:hover::after, .product-full-description .informations .slider-points .active:hover::after, .slider-points .product-full-description .informations .active:hover::after, .product-in-bag button:hover::after, .bag-pay button:hover::after, .product-in-bag .slider-points .active:hover::after, .slider-points .product-in-bag .active:hover::after, .bag-pay .slider-points .active:hover::after, .slider-points .bag-pay .active:hover::after, .bag-products .product .details button:hover::after, .bag-products .product .details .slider-points .active:hover::after, .slider-points .bag-products .product .details .active:hover::after, .paying-form form button:hover::after, .paying-form form .slider-points .active:hover::after, .slider-points .paying-form form .active:hover::after, .order-connexion button:hover::after, .order-connexion .slider-points .active:hover::after, .slider-points .order-connexion .active:hover::after {
+    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s; }
+
+.container-out {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: #5bbacf;
+  padding: 30px;
+  box-sizing: border-box; }
+
+.container-in {
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.company-name {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  border-radius: 2px;
+  color: black;
+  box-shadow: inset 0 0 0 2px black; }
+  .company-name:hover {
+    color: #5bbacf; }
+  .company-name:hover::before {
+    border-top-color: #5bbacf;
+    border-right-color: #5bbacf; }
+  .company-name:hover::after {
+    border-bottom-color: #5bbacf;
+    border-left-color: #5bbacf; }
+
+.navbar-logo {
+  margin: 0;
+  z-index: 4;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  right: 60px;
+  transition-duration: 0.5s; }
+  .navbar-logo .icon {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    top: 15px;
+    background-color: black; }
+    .navbar-logo .icon:before {
+      transition-duration: 0.5s;
+      position: absolute;
+      width: 30px;
+      height: 4px;
+      background-color: black;
+      content: "";
+      top: -10px; }
+    .navbar-logo .icon:after {
+      transition-duration: 0.5s;
+      position: absolute;
+      width: 30px;
+      height: 4px;
+      background-color: black;
+      content: "";
+      top: 10px; }
+  .navbar-logo.open .icon {
+    transition: 0.5s; }
+    .navbar-logo.open .icon:before {
+      transform: rotateZ(-45deg) scaleX(0.75) translate(-10px, -3px); }
+    .navbar-logo.open .icon:after {
+      transform: rotateZ(45deg) scaleX(0.75) translate(-10px, 3px); }
+  .navbar-logo:hover {
+    cursor: pointer; }
+
+.navbar {
+  width: 0;
+  height: calc(100vh - 60px);
+  position: fixed;
+  background-color: white;
+  z-index: 3;
+  top: 30px;
+  right: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .navbar .navbar-item {
+    color: black;
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    cursor: pointer; }
+    .navbar .navbar-item[data-margin='-80'] {
+      margin-left: -80px; }
+    .navbar .navbar-item[data-margin='60'] {
+      margin-left: 60px; }
+    .navbar .navbar-item[data-margin='100'] {
+      margin-left: 100px; }
+    .navbar .navbar-item[data-margin='140'] {
+      margin-left: 140px; }
+    .navbar .navbar-item .navbar-geometry {
+      background-color: #5bbacf;
+      height: 50px;
+      display: inline-block; }
+    .navbar .navbar-item .navbar-link {
+      margin-left: -12px;
+      font-size: 30px;
+      opacity: 0; }
+
+.bottom-links {
+  font-size: 14px;
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  margin: 0; }
+  .bottom-links button, .bottom-links .slider-points .active, .slider-points .bottom-links .active {
+    color: black; }
+    .bottom-links button:hover, .bottom-links .slider-points .active:hover, .slider-points .bottom-links .active:hover {
+      color: #5bbacf; }
+    .bottom-links button:hover::before, .bottom-links .slider-points .active:hover::before, .slider-points .bottom-links .active:hover::before {
+      border-top-color: #5bbacf;
+      border-right-color: #5bbacf; }
+    .bottom-links button:hover::after, .bottom-links .slider-points .active:hover::after, .slider-points .bottom-links .active:hover::after {
+      border-bottom-color: #5bbacf;
+      border-left-color: #5bbacf; }
+
+.item, .item-left, .item-right {
+  width: 0;
+  height: 60vh;
+  box-sizing: border-box;
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  cursor: pointer; }
+  .item button, .item-left button, .item-right button, .item .slider-points .active, .slider-points .item .active, .item-left .slider-points .active, .slider-points .item-left .active, .item-right .slider-points .active, .slider-points .item-right .active {
+    opacity: 0;
+    color: white; }
+    .item button:hover, .item-left button:hover, .item-right button:hover, .item .slider-points .active:hover, .slider-points .item .active:hover, .item-left .slider-points .active:hover, .slider-points .item-left .active:hover, .item-right .slider-points .active:hover, .slider-points .item-right .active:hover {
+      color: white; }
+    .item button:hover::before, .item-left button:hover::before, .item-right button:hover::before, .item .slider-points .active:hover::before, .slider-points .item .active:hover::before, .item-left .slider-points .active:hover::before, .slider-points .item-left .active:hover::before, .item-right .slider-points .active:hover::before, .slider-points .item-right .active:hover::before {
+      border-top-color: white;
+      border-right-color: white; }
+    .item button:hover::after, .item-left button:hover::after, .item-right button:hover::after, .item .slider-points .active:hover::after, .slider-points .item .active:hover::after, .item-left .slider-points .active:hover::after, .slider-points .item-left .active:hover::after, .item-right .slider-points .active:hover::after, .slider-points .item-right .active:hover::after {
+      border-bottom-color: white;
+      border-left-color: white; }
+  .item .title-container, .item-left .title-container, .item-right .title-container {
+    position: absolute;
+    background-color: transparent;
+    height: 60vh;
+    color: white;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    opacity: 0;
+    word-break: break-word; }
+    @media screen and (max-width: 640px) {
+      .item .title-container, .item-left .title-container, .item-right .title-container {
+        display: none; } }
+    .item .title-container div, .item-left .title-container div, .item-right .title-container div {
+      background: url("../../pic/giphy.gif");
+      background-size: cover;
+      color: #fff;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text; }
+      .item .title-container div h1, .item-left .title-container div h1, .item-right .title-container div h1 {
+        margin: 0;
+        padding: 20px;
+        font-size: 60px;
+        font-family: 'Rammetto One', cursive; }
+
+.item-left {
+  background-color: #5bbacf; }
+  .item-left:hover {
+    transform: translate(-20px, -20px); }
+  .item-left .title-container {
+    justify-content: flex-start;
+    margin-left: -5vw; }
+
+.item-right {
+  background-color: #60d6f0;
+  margin-top: 10vh; }
+  .item-right:hover {
+    transform: translate(20px, -20px); }
+  .item-right .title-container {
+    justify-content: flex-end;
+    text-align: right;
+    margin-left: 5vw; }
+
+.fullscreen-history {
+  text-align: center; }
+  .fullscreen-history .animation, .fullscreen-history h1, .fullscreen-history button, .fullscreen-history .slider-points .active, .slider-points .fullscreen-history .active {
+    opacity: 0; }
+  .fullscreen-history h1 {
+    margin-top: 40px;
+    margin-bottom: 0;
+    padding: 10px 0; }
+  .fullscreen-history button, .fullscreen-history .slider-points .active, .slider-points .fullscreen-history .active {
+    margin: 40px 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none; }
+
+.contact-box, .paying-form, .order-connexion {
+  width: 50%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; }
+  @media (max-width: 800px) {
+    .contact-box, .paying-form, .order-connexion {
+      width: 100%;
+      flex-wrap: wrap; } }
+  .contact-box .title h1, .paying-form .title h1, .order-connexion .title h1, .contact-box .message h1, .paying-form .message h1, .order-connexion .message h1, .contact-box .title h3, .paying-form .title h3, .order-connexion .title h3, .contact-box .message h3, .paying-form .message h3, .order-connexion .message h3 {
+    margin: 0;
+    padding: 0 8px;
+    box-sizing: border-box;
+    margin-bottom: -15px; }
+  .contact-box .title .line, .paying-form .title .line, .order-connexion .title .line, .contact-box .message .line, .paying-form .message .line, .order-connexion .message .line {
+    height: 18px;
+    width: 0;
+    background-color: #5bbacf; }
+  .contact-box .message h3, .paying-form .message h3, .order-connexion .message h3 {
+    margin-bottom: -9px;
+    font-weight: bold; }
+  .contact-box .informations, .paying-form .informations, .order-connexion .informations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%; }
+    .contact-box .informations .text, .paying-form .informations .text, .order-connexion .informations .text, .contact-box .informations form, .contact-box .paying-form .informations form, .paying-form .contact-box .informations form, .paying-form .informations form, .contact-box .order-connexion .informations form, .order-connexion .contact-box .informations form, .order-connexion .informations form {
+      width: calc(100% - 180px);
+      padding: 0 10px 0 0;
+      box-sizing: border-box; }
+    .contact-box .informations form, .paying-form .informations form, .order-connexion .informations form {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%; }
+      .contact-box .informations form input, .paying-form .informations form input, .order-connexion .informations form input, .contact-box .informations form textarea, .paying-form .informations form textarea, .order-connexion .informations form textarea {
+        padding: 4px 6px;
+        margin: 10px 0;
+        box-sizing: border-box;
+        border: none;
+        outline: none;
+        border-bottom: 3px solid #5bbacf;
+        transition: all 0.3s linear; }
+        .contact-box .informations form input:focus, .paying-form .informations form input:focus, .order-connexion .informations form input:focus, .contact-box .informations form textarea:focus, .paying-form .informations form textarea:focus, .order-connexion .informations form textarea:focus {
+          border-bottom: 15px solid #5bbacf !important; }
+        .contact-box .informations form input::placeholder, .paying-form .informations form input::placeholder, .order-connexion .informations form input::placeholder, .contact-box .informations form textarea::placeholder, .paying-form .informations form textarea::placeholder, .order-connexion .informations form textarea::placeholder {
+          color: black; }
+      .contact-box .informations form button, .paying-form .informations form button, .order-connexion .informations form button, .contact-box .informations form .slider-points .active, .slider-points .contact-box .informations form .active, .paying-form .informations form .slider-points .active, .slider-points .paying-form .informations form .active, .order-connexion .informations form .slider-points .active, .slider-points .order-connexion .informations form .active {
+        background: none;
+        border: none;
+        margin-top: 40px;
+        cursor: pointer;
+        outline: none; }
+    .contact-box .informations .picture, .paying-form .informations .picture, .order-connexion .informations .picture {
+      width: 180px;
+      border-radius: 2px;
+      background-image: url("../../pic/gutenberg.jpg");
+      background-size: cover;
+      height: 200px; }
+
+.product-box, .product-description, .product-bag, .product-full-description, .product-in-bag, .bag-pay, .product-picture, .bag-products {
+  width: 50%;
+  padding: 55px 50px;
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; }
+
+.product-slider, .link-left, .link-right {
+  background-color: #5bbacf;
+  box-sizing: border-box;
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s;
+  outline: none;
+  border: 3px solid #5bbacf; }
+  .product-slider:hover, .link-left:hover, .link-right:hover {
+    border: 3px solid white; }
+  .product-slider i, .link-left i, .link-right i {
+    font-size: 25px;
+    color: white; }
+
+.slider-points {
+  position: absolute;
+  top: 70px;
+  z-index: 2;
+  opacity: 0; }
+  .slider-points button, .slider-points .active {
+    border: none;
+    background-color: #5bbacf;
+    height: 20px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    outline: none;
+    border: 3px solid white;
+    transition: all 0.2s;
+    position: relative;
+    display: inline-block; }
+    .slider-points button:hover, .slider-points .active:hover {
+      border: 3px solid #5bbacf; }
+    .slider-points button:hover .tooltip, .slider-points .active:hover .tooltip {
+      visibility: visible;
+      opacity: 1; }
+    .slider-points button .tooltip, .slider-points .active .tooltip {
+      visibility: hidden;
+      width: 120px;
+      background-color: #5bbacf;
+      color: white;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+      position: absolute;
+      z-index: 1;
+      bottom: 180%;
+      left: 50%;
+      margin-left: -60px;
+      opacity: 0;
+      transition: opacity 1s; }
+      .slider-points button .tooltip::after, .slider-points .active .tooltip::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #5bbacf transparent transparent transparent; }
+  .slider-points .active {
+    background-color: #60d6f0;
+    border: 3px solid #60d6f0; }
+    .slider-points .active:hover {
+      border: 3px solid #60d6f0; }
+    .slider-points .active .tooltip {
+      background-color: #60d6f0; }
+      .slider-points .active .tooltip::after {
+        border-color: #60d6f0 transparent transparent transparent; }
+
+.link-left {
+  margin-left: -50px; }
+
+.link-right {
+  margin-right: -50px; }
+
+.product-description .title h1, .product-bag .title h1, .product-full-description .title h1, .product-in-bag .title h1, .bag-pay .title h1, .product-description .contact-box .message h1, .contact-box .product-description .message h1, .product-bag .contact-box .message h1, .contact-box .product-bag .message h1, .product-full-description .contact-box .message h1, .contact-box .product-full-description .message h1, .product-in-bag .contact-box .message h1, .contact-box .product-in-bag .message h1, .bag-pay .contact-box .message h1, .contact-box .bag-pay .message h1, .product-description .paying-form .message h1, .paying-form .product-description .message h1, .product-bag .paying-form .message h1, .paying-form .product-bag .message h1, .product-full-description .paying-form .message h1, .paying-form .product-full-description .message h1, .product-in-bag .paying-form .message h1, .paying-form .product-in-bag .message h1, .bag-pay .paying-form .message h1, .paying-form .bag-pay .message h1, .product-description .order-connexion .message h1, .order-connexion .product-description .message h1, .product-bag .order-connexion .message h1, .order-connexion .product-bag .message h1, .product-full-description .order-connexion .message h1, .order-connexion .product-full-description .message h1, .product-in-bag .order-connexion .message h1, .order-connexion .product-in-bag .message h1, .bag-pay .order-connexion .message h1, .order-connexion .bag-pay .message h1, .product-description .title h2, .product-bag .title h2, .product-full-description .title h2, .product-in-bag .title h2, .bag-pay .title h2, .product-description .contact-box .message h2, .contact-box .product-description .message h2, .product-bag .contact-box .message h2, .contact-box .product-bag .message h2, .product-full-description .contact-box .message h2, .contact-box .product-full-description .message h2, .product-in-bag .contact-box .message h2, .contact-box .product-in-bag .message h2, .bag-pay .contact-box .message h2, .contact-box .bag-pay .message h2, .product-description .paying-form .message h2, .paying-form .product-description .message h2, .product-bag .paying-form .message h2, .paying-form .product-bag .message h2, .product-full-description .paying-form .message h2, .paying-form .product-full-description .message h2, .product-in-bag .paying-form .message h2, .paying-form .product-in-bag .message h2, .bag-pay .paying-form .message h2, .paying-form .bag-pay .message h2, .product-description .order-connexion .message h2, .order-connexion .product-description .message h2, .product-bag .order-connexion .message h2, .order-connexion .product-bag .message h2, .product-full-description .order-connexion .message h2, .order-connexion .product-full-description .message h2, .product-in-bag .order-connexion .message h2, .order-connexion .product-in-bag .message h2, .bag-pay .order-connexion .message h2, .order-connexion .bag-pay .message h2, .product-description .title h3, .product-bag .title h3, .product-full-description .title h3, .product-in-bag .title h3, .bag-pay .title h3, .product-description .contact-box .message h3, .contact-box .product-description .message h3, .product-bag .contact-box .message h3, .contact-box .product-bag .message h3, .product-full-description .contact-box .message h3, .contact-box .product-full-description .message h3, .product-in-bag .contact-box .message h3, .contact-box .product-in-bag .message h3, .bag-pay .contact-box .message h3, .contact-box .bag-pay .message h3, .product-description .paying-form .message h3, .paying-form .product-description .message h3, .product-bag .paying-form .message h3, .paying-form .product-bag .message h3, .product-full-description .paying-form .message h3, .paying-form .product-full-description .message h3, .product-in-bag .paying-form .message h3, .paying-form .product-in-bag .message h3, .bag-pay .paying-form .message h3, .paying-form .bag-pay .message h3, .product-description .order-connexion .message h3, .order-connexion .product-description .message h3, .product-bag .order-connexion .message h3, .order-connexion .product-bag .message h3, .product-full-description .order-connexion .message h3, .order-connexion .product-full-description .message h3, .product-in-bag .order-connexion .message h3, .order-connexion .product-in-bag .message h3, .bag-pay .order-connexion .message h3, .order-connexion .bag-pay .message h3 {
+  margin: 0;
+  padding: 0 8px;
+  box-sizing: border-box;
+  margin-bottom: -15px; }
+.product-description .title .line, .product-bag .title .line, .product-full-description .title .line, .product-in-bag .title .line, .bag-pay .title .line, .product-description .contact-box .message .line, .contact-box .product-description .message .line, .product-bag .contact-box .message .line, .contact-box .product-bag .message .line, .product-full-description .contact-box .message .line, .contact-box .product-full-description .message .line, .product-in-bag .contact-box .message .line, .contact-box .product-in-bag .message .line, .bag-pay .contact-box .message .line, .contact-box .bag-pay .message .line, .product-description .paying-form .message .line, .paying-form .product-description .message .line, .product-bag .paying-form .message .line, .paying-form .product-bag .message .line, .product-full-description .paying-form .message .line, .paying-form .product-full-description .message .line, .product-in-bag .paying-form .message .line, .paying-form .product-in-bag .message .line, .bag-pay .paying-form .message .line, .paying-form .bag-pay .message .line, .product-description .order-connexion .message .line, .order-connexion .product-description .message .line, .product-bag .order-connexion .message .line, .order-connexion .product-bag .message .line, .product-full-description .order-connexion .message .line, .order-connexion .product-full-description .message .line, .product-in-bag .order-connexion .message .line, .order-connexion .product-in-bag .message .line, .bag-pay .order-connexion .message .line, .order-connexion .bag-pay .message .line {
+  height: 18px;
+  width: 0;
+  background-color: #5bbacf; }
+.product-description .informations, .product-bag .informations, .product-full-description .informations, .product-in-bag .informations, .bag-pay .informations {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%; }
+  .product-description .informations .text, .product-bag .informations .text, .product-full-description .informations .text, .product-in-bag .informations .text, .bag-pay .informations .text, .product-description .contact-box .informations form, .contact-box .product-description .informations form, .product-bag .contact-box .informations form, .contact-box .product-bag .informations form, .product-full-description .contact-box .informations form, .contact-box .product-full-description .informations form, .product-in-bag .contact-box .informations form, .contact-box .product-in-bag .informations form, .bag-pay .contact-box .informations form, .contact-box .bag-pay .informations form, .product-description .paying-form .informations form, .paying-form .product-description .informations form, .product-bag .paying-form .informations form, .paying-form .product-bag .informations form, .product-full-description .paying-form .informations form, .paying-form .product-full-description .informations form, .product-in-bag .paying-form .informations form, .paying-form .product-in-bag .informations form, .bag-pay .paying-form .informations form, .paying-form .bag-pay .informations form, .product-description .order-connexion .informations form, .order-connexion .product-description .informations form, .product-bag .order-connexion .informations form, .order-connexion .product-bag .informations form, .product-full-description .order-connexion .informations form, .order-connexion .product-full-description .informations form, .product-in-bag .order-connexion .informations form, .order-connexion .product-in-bag .informations form, .bag-pay .order-connexion .informations form, .order-connexion .bag-pay .informations form {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box; }
+  .product-description .informations button, .product-bag .informations button, .product-full-description .informations button, .product-in-bag .informations button, .bag-pay .informations button, .product-description .informations .slider-points .active, .slider-points .product-description .informations .active, .product-bag .informations .slider-points .active, .slider-points .product-bag .informations .active, .product-full-description .informations .slider-points .active, .slider-points .product-full-description .informations .active, .product-in-bag .informations .slider-points .active, .slider-points .product-in-bag .informations .active, .bag-pay .informations .slider-points .active, .slider-points .bag-pay .informations .active {
+    color: black;
+    box-shadow: inset 0 0 0 2px black; }
+    .product-description .informations button:hover, .product-bag .informations button:hover, .product-full-description .informations button:hover, .product-in-bag .informations button:hover, .bag-pay .informations button:hover, .product-description .informations .slider-points .active:hover, .slider-points .product-description .informations .active:hover, .product-bag .informations .slider-points .active:hover, .slider-points .product-bag .informations .active:hover, .product-full-description .informations .slider-points .active:hover, .slider-points .product-full-description .informations .active:hover, .product-in-bag .informations .slider-points .active:hover, .slider-points .product-in-bag .informations .active:hover, .bag-pay .informations .slider-points .active:hover, .slider-points .bag-pay .informations .active:hover {
+      color: #5bbacf; }
+    .product-description .informations button:hover::before, .product-bag .informations button:hover::before, .product-full-description .informations button:hover::before, .product-in-bag .informations button:hover::before, .bag-pay .informations button:hover::before, .product-description .informations .slider-points .active:hover::before, .slider-points .product-description .informations .active:hover::before, .product-bag .informations .slider-points .active:hover::before, .slider-points .product-bag .informations .active:hover::before, .product-full-description .informations .slider-points .active:hover::before, .slider-points .product-full-description .informations .active:hover::before, .product-in-bag .informations .slider-points .active:hover::before, .slider-points .product-in-bag .informations .active:hover::before, .bag-pay .informations .slider-points .active:hover::before, .slider-points .bag-pay .informations .active:hover::before {
+      border-top-color: #5bbacf;
+      border-right-color: #5bbacf; }
+    .product-description .informations button:hover::after, .product-bag .informations button:hover::after, .product-full-description .informations button:hover::after, .product-in-bag .informations button:hover::after, .bag-pay .informations button:hover::after, .product-description .informations .slider-points .active:hover::after, .slider-points .product-description .informations .active:hover::after, .product-bag .informations .slider-points .active:hover::after, .slider-points .product-bag .informations .active:hover::after, .product-full-description .informations .slider-points .active:hover::after, .slider-points .product-full-description .informations .active:hover::after, .product-in-bag .informations .slider-points .active:hover::after, .slider-points .product-in-bag .informations .active:hover::after, .bag-pay .informations .slider-points .active:hover::after, .slider-points .bag-pay .informations .active:hover::after {
+      border-bottom-color: #5bbacf;
+      border-left-color: #5bbacf; }
+    .product-description .informations button i, .product-bag .informations button i, .product-full-description .informations button i, .product-in-bag .informations button i, .bag-pay .informations button i, .product-description .informations .slider-points .active i, .slider-points .product-description .informations .active i, .product-bag .informations .slider-points .active i, .slider-points .product-bag .informations .active i, .product-full-description .informations .slider-points .active i, .slider-points .product-full-description .informations .active i, .product-in-bag .informations .slider-points .active i, .slider-points .product-in-bag .informations .active i, .bag-pay .informations .slider-points .active i, .slider-points .bag-pay .informations .active i {
+      font-size: 18px; }
+
+.product-picture img {
+  max-width: 80%;
+  max-height: 80%;
+  transform: rotate(-15deg); }
+
+.product-bag .informations .text button, .product-bag .contact-box .informations form button, .contact-box .product-bag .informations form button, .product-bag .paying-form .informations form button, .paying-form .product-bag .informations form button, .product-bag .order-connexion .informations form button, .order-connexion .product-bag .informations form button, .product-bag .informations .text .slider-points .active, .slider-points .product-bag .informations .text .active, .product-bag .contact-box .informations form .slider-points .active, .slider-points .product-bag .contact-box .informations form .active, .contact-box .product-bag .informations form .slider-points .active, .slider-points .contact-box .product-bag .informations form .active, .product-bag .paying-form .informations form .slider-points .active, .slider-points .product-bag .paying-form .informations form .active, .paying-form .product-bag .informations form .slider-points .active, .slider-points .paying-form .product-bag .informations form .active, .product-bag .order-connexion .informations form .slider-points .active, .slider-points .product-bag .order-connexion .informations form .active, .order-connexion .product-bag .informations form .slider-points .active, .slider-points .order-connexion .product-bag .informations form .active {
+  display: inline-block;
+  margin-right: 20px;
+  width: auto; }
+.product-bag .informations .text .success, .product-bag .contact-box .informations form .success, .contact-box .product-bag .informations form .success, .product-bag .paying-form .informations form .success, .paying-form .product-bag .informations form .success, .product-bag .order-connexion .informations form .success, .order-connexion .product-bag .informations form .success {
+  color: #5bbacf;
+  box-shadow: inset 0 0 0 2px #5bbacf; }
+  .product-bag .informations .text .success:hover, .product-bag .contact-box .informations form .success:hover, .contact-box .product-bag .informations form .success:hover, .product-bag .paying-form .informations form .success:hover, .paying-form .product-bag .informations form .success:hover, .product-bag .order-connexion .informations form .success:hover, .order-connexion .product-bag .informations form .success:hover {
+    color: #5bbacf; }
+  .product-bag .informations .text .success:hover::before, .product-bag .contact-box .informations form .success:hover::before, .contact-box .product-bag .informations form .success:hover::before, .product-bag .paying-form .informations form .success:hover::before, .paying-form .product-bag .informations form .success:hover::before, .product-bag .order-connexion .informations form .success:hover::before, .order-connexion .product-bag .informations form .success:hover::before {
+    border-top-color: #5bbacf;
+    border-right-color: #5bbacf; }
+  .product-bag .informations .text .success:hover::after, .product-bag .contact-box .informations form .success:hover::after, .contact-box .product-bag .informations form .success:hover::after, .product-bag .paying-form .informations form .success:hover::after, .paying-form .product-bag .informations form .success:hover::after, .product-bag .order-connexion .informations form .success:hover::after, .order-connexion .product-bag .informations form .success:hover::after {
+    border-bottom-color: #5bbacf;
+    border-left-color: #5bbacf; }
+.product-bag .informations .text .error, .product-bag .contact-box .informations form .error, .contact-box .product-bag .informations form .error, .product-bag .paying-form .informations form .error, .paying-form .product-bag .informations form .error, .product-bag .order-connexion .informations form .error, .order-connexion .product-bag .informations form .error {
+  color: red;
+  box-shadow: inset 0 0 0 2px red; }
+  .product-bag .informations .text .error:hover, .product-bag .contact-box .informations form .error:hover, .contact-box .product-bag .informations form .error:hover, .product-bag .paying-form .informations form .error:hover, .paying-form .product-bag .informations form .error:hover, .product-bag .order-connexion .informations form .error:hover, .order-connexion .product-bag .informations form .error:hover {
+    color: red; }
+  .product-bag .informations .text .error:hover::before, .product-bag .contact-box .informations form .error:hover::before, .contact-box .product-bag .informations form .error:hover::before, .product-bag .paying-form .informations form .error:hover::before, .paying-form .product-bag .informations form .error:hover::before, .product-bag .order-connexion .informations form .error:hover::before, .order-connexion .product-bag .informations form .error:hover::before {
+    border-top-color: red;
+    border-right-color: red; }
+  .product-bag .informations .text .error:hover::after, .product-bag .contact-box .informations form .error:hover::after, .contact-box .product-bag .informations form .error:hover::after, .product-bag .paying-form .informations form .error:hover::after, .paying-form .product-bag .informations form .error:hover::after, .product-bag .order-connexion .informations form .error:hover::after, .order-connexion .product-bag .informations form .error:hover::after {
+    border-bottom-color: red;
+    border-left-color: red; }
+
+.product-full-description img {
+  height: 300px;
+  opacity: 0; }
+
+.product-in-bag .actions, .bag-pay .actions {
+  margin-top: 40px; }
+.product-in-bag button, .bag-pay button, .product-in-bag .slider-points .active, .slider-points .product-in-bag .active, .bag-pay .slider-points .active, .slider-points .bag-pay .active {
+  margin: 5px 10px;
+  display: inline-block;
+  color: black;
+  box-shadow: inset 0 0 0 2px black; }
+  .product-in-bag button:hover, .bag-pay button:hover, .product-in-bag .slider-points .active:hover, .slider-points .product-in-bag .active:hover, .bag-pay .slider-points .active:hover, .slider-points .bag-pay .active:hover {
+    color: #5bbacf; }
+  .product-in-bag button:hover::before, .bag-pay button:hover::before, .product-in-bag .slider-points .active:hover::before, .slider-points .product-in-bag .active:hover::before, .bag-pay .slider-points .active:hover::before, .slider-points .bag-pay .active:hover::before {
+    border-top-color: #5bbacf;
+    border-right-color: #5bbacf; }
+  .product-in-bag button:hover::after, .bag-pay button:hover::after, .product-in-bag .slider-points .active:hover::after, .slider-points .product-in-bag .active:hover::after, .bag-pay .slider-points .active:hover::after, .slider-points .bag-pay .active:hover::after {
+    border-bottom-color: #5bbacf;
+    border-left-color: #5bbacf; }
+
+.book {
+  transform: translateY(-50%);
+  position: relative;
+  margin: 0 auto;
+  border: 5px solid #5bbacf;
+  width: 100px;
+  height: 60px; }
+
+.book__page {
+  position: absolute;
+  left: 50%;
+  top: -5px;
+  margin: 0 auto;
+  border-top: 5px solid #5bbacf;
+  border-bottom: 5px solid #5bbacf;
+  border-right: 5px solid #5bbacf;
+  background: #ffffff;
+  width: 50px;
+  height: 60px;
+  transform-origin: 0% 50%;
+  animation: flip 1.2s infinite linear;
+  animation-fill-mode: forwards; }
+  .book__page:nth-child(1) {
+    z-index: -1;
+    animation-delay: 1.4s; }
+  .book__page:nth-child(2) {
+    z-index: -2;
+    animation-delay: 2.8s; }
+  .book__page:nth-child(3) {
+    z-index: -3;
+    animation-delay: 4.2s; }
+
+@keyframes flip {
+  0% {
+    transform: perspective(600px) rotateY(0deg); }
+  20% {
+    background: #e6e6e6; }
+  29.9% {
+    background: #e6e6e6; }
+  30% {
+    transform: perspective(200px) rotateY(-90deg);
+    background: #ffffff; }
+  54.999% {
+    opacity: 1; }
+  55% {
+    opacity: 0; }
+  60% {
+    transform: perspective(200px) rotateY(-180deg);
+    background: #ffffff; }
+  100% {
+    transform: perspective(200px) rotateY(-180deg);
+    background: #ffffff; } }
+.bag-products {
+  display: block;
+  height: calc(100% - 100px);
+  padding: 0 50px;
+  overflow: scroll;
+  opacity: 1; }
+  .bag-products .product {
+    display: flex;
+    width: 100%;
+    opacity: 0; }
+    .bag-products .product .picture {
+      width: 30%;
+      padding: 5px;
+      text-align: center;
+      box-sizing: border-box; }
+      .bag-products .product .picture img {
+        max-width: 100%;
+        max-height: 100%; }
+    .bag-products .product .details {
+      width: 70%;
+      padding: 5px;
+      box-sizing: border-box; }
+      .bag-products .product .details button, .bag-products .product .details .slider-points .active, .slider-points .bag-products .product .details .active {
+        color: red; }
+        .bag-products .product .details button:hover, .bag-products .product .details .slider-points .active:hover, .slider-points .bag-products .product .details .active:hover {
+          color: red; }
+        .bag-products .product .details button:hover::before, .bag-products .product .details .slider-points .active:hover::before, .slider-points .bag-products .product .details .active:hover::before {
+          border-top-color: red;
+          border-right-color: red; }
+        .bag-products .product .details button:hover::after, .bag-products .product .details .slider-points .active:hover::after, .slider-points .bag-products .product .details .active:hover::after {
+          border-bottom-color: red;
+          border-left-color: red; }
+
+.paying-form {
+  display: block; }
+  .paying-form form {
+    width: 100%; }
+    .paying-form form button, .paying-form form .slider-points .active, .slider-points .paying-form form .active {
+      color: #5bbacf; }
+      .paying-form form button:hover, .paying-form form .slider-points .active:hover, .slider-points .paying-form form .active:hover {
+        color: #5bbacf; }
+      .paying-form form button:hover::before, .paying-form form .slider-points .active:hover::before, .slider-points .paying-form form .active:hover::before {
+        border-top-color: #5bbacf;
+        border-right-color: #5bbacf; }
+      .paying-form form button:hover::after, .paying-form form .slider-points .active:hover::after, .slider-points .paying-form form .active:hover::after {
+        border-bottom-color: #5bbacf;
+        border-left-color: #5bbacf; }
+
+.order-connexion button, .order-connexion .slider-points .active, .slider-points .order-connexion .active {
+  color: #5bbacf; }
+  .order-connexion button:hover, .order-connexion .slider-points .active:hover, .slider-points .order-connexion .active:hover {
+    color: #5bbacf; }
+  .order-connexion button:hover::before, .order-connexion .slider-points .active:hover::before, .slider-points .order-connexion .active:hover::before {
+    border-top-color: #5bbacf;
+    border-right-color: #5bbacf; }
+  .order-connexion button:hover::after, .order-connexion .slider-points .active:hover::after, .slider-points .order-connexion .active:hover::after {
+    border-bottom-color: #5bbacf;
+    border-left-color: #5bbacf; }
+
+/*# sourceMappingURL=index.css.map */

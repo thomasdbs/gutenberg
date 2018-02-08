@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', serif;
+}
+
+$color1: #5bbacf;
+$color2: #60d6f0;
+
+@import "link";
+@import "container";
+@import "home";
+@import "history";
+@import "contact";
+@import "products";
+@import "loader";
+@import "shoppingBag";
+@import "orders";
