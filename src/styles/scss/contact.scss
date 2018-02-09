@@ -9,9 +9,10 @@
   justify-content: center;
   opacity: 0;
 
-  @media (max-width: 800px) {
+  @media (max-width: 768px) {
     width: 100%;
-    flex-wrap: wrap;
+    display: block;
+    height: auto;
   }
 
   & .title {
@@ -47,10 +48,19 @@
     margin-top: 20px;
     width: 100%;
 
+    @media (max-width: 768px) {
+      display: block;
+    }
+
     & .text {
       width: calc(100% - 180px);
       padding: 0 10px 0 0;
       box-sizing: border-box;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+
     }
 
     & form {
@@ -95,6 +105,12 @@
       background-image: url('../../pic/gutenberg.jpg');
       background-size: cover;
       height: 200px;
+
+      @media (max-width: 768px) {
+        margin: 0 10px;
+        box-sizing: border-box;
+      }
+
     }
 
   }

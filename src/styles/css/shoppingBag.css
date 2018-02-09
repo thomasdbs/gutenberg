@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$color1".
-        on line 71 of src/styles/scss/shoppingBag.scss
+        on line 85 of src/styles/scss/shoppingBag.scss
 
-66:   & form {
-67:     width: 100%;
-68: 
-69:     & button {
-70:       @extend .link;
-71:       color: $color1;
-72: 
-73:       &:hover {
-74:         color: $color1;
-75:       }
-76: 
+80:   & form {
+81:     width: 100%;
+82: 
+83:     & button {
+84:       @extend .link;
+85:       color: $color1;
+86: 
+87:       &:hover {
+88:         color: $color1;
+89:       }
+90: 
 
 Backtrace:
-src/styles/scss/shoppingBag.scss:71
+src/styles/scss/shoppingBag.scss:85
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/script/tree/node.rb:50:in `perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -91,4 +91,4 @@ src/styles/scss/shoppingBag.scss:71
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color1\".\A         on line 71 of src/styles/scss/shoppingBag.scss\A \A 66:   & form {\A 67:     width: 100%;\A 68: \A 69:     & button {\A 70:       @extend .link;\A 71:       color: $color1;\A 72: \A 73:       &:hover {\A 74:         color: $color1;\A 75:       }\A 76: "; }
+  content: "Error: Undefined variable: \"$color1\".\A         on line 85 of src/styles/scss/shoppingBag.scss\A \A 80:   & form {\A 81:     width: 100%;\A 82: \A 83:     & button {\A 84:       @extend .link;\A 85:       color: $color1;\A 86: \A 87:       &:hover {\A 88:         color: $color1;\A 89:       }\A 90: "; }

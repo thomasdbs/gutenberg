@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$color1".
-        on line 6 of src/styles/scss/orders.scss
+        on line 8 of src/styles/scss/orders.scss
 
-1: .order-connexion {
-2:   @extend .contact-box;
 3: 
-4:   & button {
-5:     @extend .link;
-6:     color: $color1;
-7: 
-8:     &:hover {
-9:       color: $color1;
-10:     }
-11: 
+4:   
+5: 
+6:   & button {
+7:     @extend .link;
+8:     color: $color1;
+9: 
+10:     &:hover {
+11:       color: $color1;
+12:     }
+13: 
 
 Backtrace:
-src/styles/scss/orders.scss:6
+src/styles/scss/orders.scss:8
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/script/tree/node.rb:50:in `perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -80,4 +80,4 @@ src/styles/scss/orders.scss:6
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color1\".\A         on line 6 of src/styles/scss/orders.scss\A \A 1: .order-connexion {\A 2:   @extend .contact-box;\A 3: \A 4:   & button {\A 5:     @extend .link;\A 6:     color: $color1;\A 7: \A 8:     &:hover {\A 9:       color: $color1;\A 10:     }\A 11: "; }
+  content: "Error: Undefined variable: \"$color1\".\A         on line 8 of src/styles/scss/orders.scss\A \A 3: \A 4:   \A 5: \A 6:   & button {\A 7:     @extend .link;\A 8:     color: $color1;\A 9: \A 10:     &:hover {\A 11:       color: $color1;\A 12:     }\A 13: "; }

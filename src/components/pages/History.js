@@ -123,7 +123,7 @@ class History extends Component {
           <div className="fullscreen-history">
 
             {(this.state.currentLine > 0) && (
-              <button onClick={() => this.changeLine('previous')}>
+              <button className="top" onClick={() => this.changeLine('previous')}>
                 <img src={require('../../pic/arrow-up.png')} alt=""/>
               </button>
             )}
@@ -133,7 +133,7 @@ class History extends Component {
             <h1 data-delay="2">{textThree}</h1>
 
             {(this.state.currentLine < 2) && (
-            <button onClick={() => this.changeLine('next')}>
+            <button className="bottom" onClick={() => this.changeLine('next')}>
               <img src={require('../../pic/arrow-down.png')} alt=""/>
             </button>
             )}

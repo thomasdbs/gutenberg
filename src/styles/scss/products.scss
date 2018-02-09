@@ -1,6 +1,23 @@
 .product-box {
   width: 50%;
   padding: 55px 50px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    display: block;
+    padding: 0;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  & .presentation {
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+
+  }
+
   box-sizing: border-box;
   height: 100%;
   display: flex;
@@ -22,6 +39,10 @@
   outline: none;
   border: 3px solid $color1;
 
+  @media (max-width: 768px) {
+    margin: 0 0 20px 0 !important;
+  }
+
 
   &:hover {
     border: 3px solid white;
@@ -39,6 +60,14 @@
   top: 70px;
   z-index: 2;
   opacity: 0;
+
+  @media (max-width: 768px) {
+    position:inherit;
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100vw - 120px);
+    justify-content: center;
+  }
 
   & button {
     border: none;
@@ -124,10 +153,19 @@
 .link-right {
   @extend .product-slider;
   margin-right: -50px;
+
+  @media (max-width: 768px) {
+    float: right;
+  }
+
 }
 
 .product-description {
   @extend .product-box;
+
+  @media (max-width: 768px) {
+    margin-top: 50px;
+  }
 
   & .title {
 
@@ -136,6 +174,12 @@
       padding: 0 8px;
       box-sizing: border-box;
       margin-bottom: -15px;
+      text-align: center;
+
+      @media (max-width: 768px) {
+        font-size: 20px;
+      }
+
     }
 
     & .line {
@@ -157,6 +201,11 @@
       width: 100%;
       padding: 0 10px;
       box-sizing: border-box;
+
+      @media (max-width: 768px) {
+        padding: 0;
+      }
+
     }
 
     & button {
@@ -195,7 +244,14 @@
     max-width: 80%;
     max-height: 80%;
     transform: rotate(-15deg);
+
   }
+
+  @media (max-width: 768px) {
+    text-align: center;
+    margin-top: 40px;
+  }
+
 }
 
 .product-bag {
@@ -260,8 +316,11 @@
 .product-full-description {
   @extend .product-description;
 
+  text-align: center;
+
   & img {
     height: 300px;
+    max-width: 100%;
     opacity: 0;
   }
 
@@ -272,6 +331,7 @@
 
   & .actions {
     margin-top: 40px;
+    text-align: center;
   }
 
   & button {

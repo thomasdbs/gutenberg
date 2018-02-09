@@ -8,6 +8,11 @@ $clouds:$color1;
   border:5px solid $clouds;
   width:100px;
   height:60px;
+
+  @media (max-width: 768px) {
+    margin-top: 40vh;
+  }
+
 }
 .book__page{
   position:absolute;

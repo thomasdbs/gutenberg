@@ -1,16 +1,27 @@
 .fullscreen-history {
-  text-align: center; }
-  .fullscreen-history .animation, .fullscreen-history h1, .fullscreen-history button {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%; }
+  .fullscreen-history .animation, .fullscreen-history h1, .fullscreen-history .button, .fullscreen-history .top, .fullscreen-history .bottom {
     opacity: 0; }
   .fullscreen-history h1 {
     margin-top: 40px;
     margin-bottom: 0;
     padding: 10px 0; }
-  .fullscreen-history button {
-    margin: 40px 0;
+    @media screen and (max-width: 768px) {
+      .fullscreen-history h1 {
+        font-size: 14px; } }
+  .fullscreen-history .button, .fullscreen-history .top, .fullscreen-history .bottom {
     background: none;
     border: none;
     cursor: pointer;
     outline: none; }
+  .fullscreen-history .top {
+    margin: 0 0 40px 0; }
+  .fullscreen-history .bottom {
+    margin: 40px 0 0 0; }
 
 /*# sourceMappingURL=history.css.map */

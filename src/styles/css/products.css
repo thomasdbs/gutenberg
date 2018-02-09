@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$color1".
-        on line 14 of src/styles/scss/products.scss
+        on line 31 of src/styles/scss/products.scss
 
-9:   justify-content: center;
-10:   opacity: 0;
-11: }
-12: 
-13: .product-slider {
-14:   background-color: $color1;
-15:   box-sizing: border-box;
-16:   height: 50px;
-17:   width: 50px;
-18:   border: none;
-19:   border-radius: 50%;
+26:   justify-content: center;
+27:   opacity: 0;
+28: }
+29: 
+30: .product-slider {
+31:   background-color: $color1;
+32:   box-sizing: border-box;
+33:   height: 50px;
+34:   width: 50px;
+35:   border: none;
+36:   border-radius: 50%;
 
 Backtrace:
-src/styles/scss/products.scss:14
+src/styles/scss/products.scss:31
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/script/tree/node.rb:50:in `perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -69,4 +69,4 @@ src/styles/scss/products.scss:14
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color1\".\A         on line 14 of src/styles/scss/products.scss\A \A 9:   justify-content: center;\A 10:   opacity: 0;\A 11: }\A 12: \A 13: .product-slider {\A 14:   background-color: $color1;\A 15:   box-sizing: border-box;\A 16:   height: 50px;\A 17:   width: 50px;\A 18:   border: none;\A 19:   border-radius: 50%;"; }
+  content: "Error: Undefined variable: \"$color1\".\A         on line 31 of src/styles/scss/products.scss\A \A 26:   justify-content: center;\A 27:   opacity: 0;\A 28: }\A 29: \A 30: .product-slider {\A 31:   background-color: $color1;\A 32:   box-sizing: border-box;\A 33:   height: 50px;\A 34:   width: 50px;\A 35:   border: none;\A 36:   border-radius: 50%;"; }

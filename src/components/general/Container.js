@@ -73,24 +73,29 @@ class Container extends Component {
                 <span className="navbar-link" data-delay="1.5">Nos produits</span>
               </div>
 
-              <div className="navbar-item" data-margin="100" onClick={() => this.hideNav('/compte')}>
+              <div className="navbar-item" data-margin="100" onClick={() => this.hideNav('/commandes')}>
                 <div className="navbar-geometry" data-width="60" data-delay="2"></div>
                 <span className="navbar-link" data-delay="2">Mes commandes</span>
               </div>
 
+              <div className="navbar-item" data-margin="100" onClick={() => this.hideNav('/panier')}>
+                <div className="navbar-geometry" data-width="50" data-delay="2.5"></div>
+                <span className="navbar-link" data-delay="2.5">Mon panier</span>
+              </div>
+
               <div className="navbar-item" data-margin="60" onClick={() => this.hideNav('/histoire')}>
-                <div className="navbar-geometry" data-width="80" data-delay="2.5"></div>
-                <span className="navbar-link" data-delay="2.5">Notre histoire</span>
+                <div className="navbar-geometry" data-width="80" data-delay="3"></div>
+                <span className="navbar-link" data-delay="3">Notre histoire</span>
               </div>
 
               <div className="navbar-item" data-margin="140" onClick={() => this.hideNav('/contact')}>
-                <div className="navbar-geometry" data-width="60" data-delay="3"></div>
-                <span className="navbar-link" data-delay="3">Nous contacter</span>
+                <div className="navbar-geometry" data-width="60" data-delay="3.5"></div>
+                <span className="navbar-link" data-delay="3.5">Nous contacter</span>
               </div>
 
               <div className="navbar-item" data-margin="60" onClick={() => this.hideNav('/mentions-legales')}>
-                <div className="navbar-geometry" data-width="50" data-delay="3.5"></div>
-                <span className="navbar-link" data-delay="3.5">Mentions légales</span>
+                <div className="navbar-geometry" data-width="50" data-delay="4"></div>
+                <span className="navbar-link" data-delay="4">Mentions légales</span>
               </div>
 
             </div>

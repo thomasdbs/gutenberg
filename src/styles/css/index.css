@@ -56,6 +56,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media screen and (max-width: 768px) {
+    .container-in {
+      display: block;
+      padding: 0 30px;
+      border-top: 80px solid white;
+      overflow-y: scroll;
+      overflow-x: hidden; } }
 
 .company-name {
   position: absolute;
@@ -143,14 +150,25 @@ body {
       margin-left: 100px; }
     .navbar .navbar-item[data-margin='140'] {
       margin-left: 140px; }
+    @media screen and (max-width: 768px) {
+      .navbar .navbar-item {
+        width: 100%; }
+        .navbar .navbar-item[data-margin] {
+          margin-left: 0; } }
     .navbar .navbar-item .navbar-geometry {
       background-color: #5bbacf;
       height: 50px;
       display: inline-block; }
+      @media screen and (max-width: 768px) {
+        .navbar .navbar-item .navbar-geometry {
+          height: 40px; } }
     .navbar .navbar-item .navbar-link {
       margin-left: -12px;
       font-size: 30px;
       opacity: 0; }
+      @media screen and (max-width: 768px) {
+        .navbar .navbar-item .navbar-link {
+          font-size: 20px; } }
 
 .bottom-links {
   font-size: 14px;
@@ -158,6 +176,9 @@ body {
   bottom: 60px;
   left: 60px;
   margin: 0; }
+  @media screen and (max-width: 768px) {
+    .bottom-links {
+      display: none; } }
   .bottom-links button, .bottom-links .slider-points .active, .slider-points .bottom-links .active {
     color: black; }
     .bottom-links button:hover, .bottom-links .slider-points .active:hover, .slider-points .bottom-links .active:hover {
@@ -178,6 +199,9 @@ body {
   justify-content: center;
   align-items: flex-end;
   cursor: pointer; }
+  @media screen and (max-width: 768px) {
+    .item, .item-left, .item-right {
+      height: calc(50% - 40px); } }
   .item button, .item-left button, .item-right button, .item .slider-points .active, .slider-points .item .active, .item-left .slider-points .active, .slider-points .item-left .active, .item-right .slider-points .active, .slider-points .item-right .active {
     opacity: 0;
     color: white; }
@@ -200,7 +224,7 @@ body {
     margin-top: 20px;
     opacity: 0;
     word-break: break-word; }
-    @media screen and (max-width: 640px) {
+    @media screen and (max-width: 768px) {
       .item .title-container, .item-left .title-container, .item-right .title-container {
         display: none; } }
     .item .title-container div, .item-left .title-container div, .item-right .title-container div {
@@ -217,8 +241,9 @@ body {
 
 .item-left {
   background-color: #5bbacf; }
-  .item-left:hover {
-    transform: translate(-20px, -20px); }
+  @media screen and (min-width: 769px) {
+    .item-left:hover {
+      transform: translate(-20px, -20px); } }
   .item-left .title-container {
     justify-content: flex-start;
     margin-left: -5vw; }
@@ -226,6 +251,9 @@ body {
 .item-right {
   background-color: #60d6f0;
   margin-top: 10vh; }
+  @media screen and (max-width: 768px) {
+    .item-right {
+      margin-top: 0; } }
   .item-right:hover {
     transform: translate(20px, -20px); }
   .item-right .title-container {
@@ -234,19 +262,30 @@ body {
     margin-left: 5vw; }
 
 .fullscreen-history {
-  text-align: center; }
-  .fullscreen-history .animation, .fullscreen-history h1, .fullscreen-history button, .fullscreen-history .slider-points .active, .slider-points .fullscreen-history .active {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%; }
+  .fullscreen-history .animation, .fullscreen-history h1, .fullscreen-history .button, .fullscreen-history .top, .fullscreen-history .bottom {
     opacity: 0; }
   .fullscreen-history h1 {
     margin-top: 40px;
     margin-bottom: 0;
     padding: 10px 0; }
-  .fullscreen-history button, .fullscreen-history .slider-points .active, .slider-points .fullscreen-history .active {
-    margin: 40px 0;
+    @media screen and (max-width: 768px) {
+      .fullscreen-history h1 {
+        font-size: 14px; } }
+  .fullscreen-history .button, .fullscreen-history .top, .fullscreen-history .bottom {
     background: none;
     border: none;
     cursor: pointer;
     outline: none; }
+  .fullscreen-history .top {
+    margin: 0 0 40px 0; }
+  .fullscreen-history .bottom {
+    margin: 40px 0 0 0; }
 
 .contact-box, .paying-form, .order-connexion {
   width: 50%;
@@ -258,10 +297,11 @@ body {
   align-items: center;
   justify-content: center;
   opacity: 0; }
-  @media (max-width: 800px) {
+  @media (max-width: 768px) {
     .contact-box, .paying-form, .order-connexion {
       width: 100%;
-      flex-wrap: wrap; } }
+      display: block;
+      height: auto; } }
   .contact-box .title h1, .paying-form .title h1, .order-connexion .title h1, .contact-box .message h1, .paying-form .message h1, .order-connexion .message h1, .contact-box .title h3, .paying-form .title h3, .order-connexion .title h3, .contact-box .message h3, .paying-form .message h3, .order-connexion .message h3 {
     margin: 0;
     padding: 0 8px;
@@ -280,10 +320,16 @@ body {
     justify-content: center;
     margin-top: 20px;
     width: 100%; }
+    @media (max-width: 768px) {
+      .contact-box .informations, .paying-form .informations, .order-connexion .informations {
+        display: block; } }
     .contact-box .informations .text, .paying-form .informations .text, .order-connexion .informations .text, .contact-box .informations form, .contact-box .paying-form .informations form, .paying-form .contact-box .informations form, .paying-form .informations form, .contact-box .order-connexion .informations form, .order-connexion .contact-box .informations form, .order-connexion .informations form {
       width: calc(100% - 180px);
       padding: 0 10px 0 0;
       box-sizing: border-box; }
+      @media (max-width: 768px) {
+        .contact-box .informations .text, .paying-form .informations .text, .order-connexion .informations .text, .contact-box .informations form, .contact-box .paying-form .informations form, .paying-form .contact-box .informations form, .paying-form .informations form, .contact-box .order-connexion .informations form, .order-connexion .contact-box .informations form, .order-connexion .informations form {
+          width: 100%; } }
     .contact-box .informations form, .paying-form .informations form, .order-connexion .informations form {
       display: flex;
       flex-direction: column;
@@ -312,6 +358,10 @@ body {
       background-image: url("../../pic/gutenberg.jpg");
       background-size: cover;
       height: 200px; }
+      @media (max-width: 768px) {
+        .contact-box .informations .picture, .paying-form .informations .picture, .order-connexion .informations .picture {
+          margin: 0 10px;
+          box-sizing: border-box; } }
 
 .product-box, .product-description, .product-bag, .product-full-description, .product-in-bag, .bag-pay, .product-picture, .bag-products {
   width: 50%;
@@ -323,6 +373,16 @@ body {
   align-items: center;
   justify-content: center;
   opacity: 0; }
+  @media (max-width: 768px) {
+    .product-box, .product-description, .product-bag, .product-full-description, .product-in-bag, .bag-pay, .product-picture, .bag-products {
+      width: 100%;
+      display: block;
+      padding: 0;
+      height: auto;
+      margin-bottom: 30px; } }
+  @media (max-width: 768px) {
+    .product-box .presentation, .product-description .presentation, .product-bag .presentation, .product-full-description .presentation, .product-in-bag .presentation, .bag-pay .presentation, .product-picture .presentation, .bag-products .presentation {
+      text-align: center; } }
 
 .product-slider, .link-left, .link-right {
   background-color: #5bbacf;
@@ -335,6 +395,9 @@ body {
   transition: all 0.2s;
   outline: none;
   border: 3px solid #5bbacf; }
+  @media (max-width: 768px) {
+    .product-slider, .link-left, .link-right {
+      margin: 0 0 20px 0 !important; } }
   .product-slider:hover, .link-left:hover, .link-right:hover {
     border: 3px solid white; }
   .product-slider i, .link-left i, .link-right i {
@@ -346,6 +409,13 @@ body {
   top: 70px;
   z-index: 2;
   opacity: 0; }
+  @media (max-width: 768px) {
+    .slider-points {
+      position: inherit;
+      display: flex;
+      flex-wrap: wrap;
+      width: calc(100vw - 120px);
+      justify-content: center; } }
   .slider-points button, .slider-points .active {
     border: none;
     background-color: #5bbacf;
@@ -403,12 +473,22 @@ body {
 
 .link-right {
   margin-right: -50px; }
+  @media (max-width: 768px) {
+    .link-right {
+      float: right; } }
 
+@media (max-width: 768px) {
+  .product-description, .product-bag, .product-full-description, .product-in-bag, .bag-pay {
+    margin-top: 50px; } }
 .product-description .title h1, .product-bag .title h1, .product-full-description .title h1, .product-in-bag .title h1, .bag-pay .title h1, .product-description .contact-box .message h1, .contact-box .product-description .message h1, .product-bag .contact-box .message h1, .contact-box .product-bag .message h1, .product-full-description .contact-box .message h1, .contact-box .product-full-description .message h1, .product-in-bag .contact-box .message h1, .contact-box .product-in-bag .message h1, .bag-pay .contact-box .message h1, .contact-box .bag-pay .message h1, .product-description .paying-form .message h1, .paying-form .product-description .message h1, .product-bag .paying-form .message h1, .paying-form .product-bag .message h1, .product-full-description .paying-form .message h1, .paying-form .product-full-description .message h1, .product-in-bag .paying-form .message h1, .paying-form .product-in-bag .message h1, .bag-pay .paying-form .message h1, .paying-form .bag-pay .message h1, .product-description .order-connexion .message h1, .order-connexion .product-description .message h1, .product-bag .order-connexion .message h1, .order-connexion .product-bag .message h1, .product-full-description .order-connexion .message h1, .order-connexion .product-full-description .message h1, .product-in-bag .order-connexion .message h1, .order-connexion .product-in-bag .message h1, .bag-pay .order-connexion .message h1, .order-connexion .bag-pay .message h1, .product-description .title h2, .product-bag .title h2, .product-full-description .title h2, .product-in-bag .title h2, .bag-pay .title h2, .product-description .contact-box .message h2, .contact-box .product-description .message h2, .product-bag .contact-box .message h2, .contact-box .product-bag .message h2, .product-full-description .contact-box .message h2, .contact-box .product-full-description .message h2, .product-in-bag .contact-box .message h2, .contact-box .product-in-bag .message h2, .bag-pay .contact-box .message h2, .contact-box .bag-pay .message h2, .product-description .paying-form .message h2, .paying-form .product-description .message h2, .product-bag .paying-form .message h2, .paying-form .product-bag .message h2, .product-full-description .paying-form .message h2, .paying-form .product-full-description .message h2, .product-in-bag .paying-form .message h2, .paying-form .product-in-bag .message h2, .bag-pay .paying-form .message h2, .paying-form .bag-pay .message h2, .product-description .order-connexion .message h2, .order-connexion .product-description .message h2, .product-bag .order-connexion .message h2, .order-connexion .product-bag .message h2, .product-full-description .order-connexion .message h2, .order-connexion .product-full-description .message h2, .product-in-bag .order-connexion .message h2, .order-connexion .product-in-bag .message h2, .bag-pay .order-connexion .message h2, .order-connexion .bag-pay .message h2, .product-description .title h3, .product-bag .title h3, .product-full-description .title h3, .product-in-bag .title h3, .bag-pay .title h3, .product-description .contact-box .message h3, .contact-box .product-description .message h3, .product-bag .contact-box .message h3, .contact-box .product-bag .message h3, .product-full-description .contact-box .message h3, .contact-box .product-full-description .message h3, .product-in-bag .contact-box .message h3, .contact-box .product-in-bag .message h3, .bag-pay .contact-box .message h3, .contact-box .bag-pay .message h3, .product-description .paying-form .message h3, .paying-form .product-description .message h3, .product-bag .paying-form .message h3, .paying-form .product-bag .message h3, .product-full-description .paying-form .message h3, .paying-form .product-full-description .message h3, .product-in-bag .paying-form .message h3, .paying-form .product-in-bag .message h3, .bag-pay .paying-form .message h3, .paying-form .bag-pay .message h3, .product-description .order-connexion .message h3, .order-connexion .product-description .message h3, .product-bag .order-connexion .message h3, .order-connexion .product-bag .message h3, .product-full-description .order-connexion .message h3, .order-connexion .product-full-description .message h3, .product-in-bag .order-connexion .message h3, .order-connexion .product-in-bag .message h3, .bag-pay .order-connexion .message h3, .order-connexion .bag-pay .message h3 {
   margin: 0;
   padding: 0 8px;
   box-sizing: border-box;
-  margin-bottom: -15px; }
+  margin-bottom: -15px;
+  text-align: center; }
+  @media (max-width: 768px) {
+    .product-description .title h1, .product-bag .title h1, .product-full-description .title h1, .product-in-bag .title h1, .bag-pay .title h1, .product-description .contact-box .message h1, .contact-box .product-description .message h1, .product-bag .contact-box .message h1, .contact-box .product-bag .message h1, .product-full-description .contact-box .message h1, .contact-box .product-full-description .message h1, .product-in-bag .contact-box .message h1, .contact-box .product-in-bag .message h1, .bag-pay .contact-box .message h1, .contact-box .bag-pay .message h1, .product-description .paying-form .message h1, .paying-form .product-description .message h1, .product-bag .paying-form .message h1, .paying-form .product-bag .message h1, .product-full-description .paying-form .message h1, .paying-form .product-full-description .message h1, .product-in-bag .paying-form .message h1, .paying-form .product-in-bag .message h1, .bag-pay .paying-form .message h1, .paying-form .bag-pay .message h1, .product-description .order-connexion .message h1, .order-connexion .product-description .message h1, .product-bag .order-connexion .message h1, .order-connexion .product-bag .message h1, .product-full-description .order-connexion .message h1, .order-connexion .product-full-description .message h1, .product-in-bag .order-connexion .message h1, .order-connexion .product-in-bag .message h1, .bag-pay .order-connexion .message h1, .order-connexion .bag-pay .message h1, .product-description .title h2, .product-bag .title h2, .product-full-description .title h2, .product-in-bag .title h2, .bag-pay .title h2, .product-description .contact-box .message h2, .contact-box .product-description .message h2, .product-bag .contact-box .message h2, .contact-box .product-bag .message h2, .product-full-description .contact-box .message h2, .contact-box .product-full-description .message h2, .product-in-bag .contact-box .message h2, .contact-box .product-in-bag .message h2, .bag-pay .contact-box .message h2, .contact-box .bag-pay .message h2, .product-description .paying-form .message h2, .paying-form .product-description .message h2, .product-bag .paying-form .message h2, .paying-form .product-bag .message h2, .product-full-description .paying-form .message h2, .paying-form .product-full-description .message h2, .product-in-bag .paying-form .message h2, .paying-form .product-in-bag .message h2, .bag-pay .paying-form .message h2, .paying-form .bag-pay .message h2, .product-description .order-connexion .message h2, .order-connexion .product-description .message h2, .product-bag .order-connexion .message h2, .order-connexion .product-bag .message h2, .product-full-description .order-connexion .message h2, .order-connexion .product-full-description .message h2, .product-in-bag .order-connexion .message h2, .order-connexion .product-in-bag .message h2, .bag-pay .order-connexion .message h2, .order-connexion .bag-pay .message h2, .product-description .title h3, .product-bag .title h3, .product-full-description .title h3, .product-in-bag .title h3, .bag-pay .title h3, .product-description .contact-box .message h3, .contact-box .product-description .message h3, .product-bag .contact-box .message h3, .contact-box .product-bag .message h3, .product-full-description .contact-box .message h3, .contact-box .product-full-description .message h3, .product-in-bag .contact-box .message h3, .contact-box .product-in-bag .message h3, .bag-pay .contact-box .message h3, .contact-box .bag-pay .message h3, .product-description .paying-form .message h3, .paying-form .product-description .message h3, .product-bag .paying-form .message h3, .paying-form .product-bag .message h3, .product-full-description .paying-form .message h3, .paying-form .product-full-description .message h3, .product-in-bag .paying-form .message h3, .paying-form .product-in-bag .message h3, .bag-pay .paying-form .message h3, .paying-form .bag-pay .message h3, .product-description .order-connexion .message h3, .order-connexion .product-description .message h3, .product-bag .order-connexion .message h3, .order-connexion .product-bag .message h3, .product-full-description .order-connexion .message h3, .order-connexion .product-full-description .message h3, .product-in-bag .order-connexion .message h3, .order-connexion .product-in-bag .message h3, .bag-pay .order-connexion .message h3, .order-connexion .bag-pay .message h3 {
+      font-size: 20px; } }
 .product-description .title .line, .product-bag .title .line, .product-full-description .title .line, .product-in-bag .title .line, .bag-pay .title .line, .product-description .contact-box .message .line, .contact-box .product-description .message .line, .product-bag .contact-box .message .line, .contact-box .product-bag .message .line, .product-full-description .contact-box .message .line, .contact-box .product-full-description .message .line, .product-in-bag .contact-box .message .line, .contact-box .product-in-bag .message .line, .bag-pay .contact-box .message .line, .contact-box .bag-pay .message .line, .product-description .paying-form .message .line, .paying-form .product-description .message .line, .product-bag .paying-form .message .line, .paying-form .product-bag .message .line, .product-full-description .paying-form .message .line, .paying-form .product-full-description .message .line, .product-in-bag .paying-form .message .line, .paying-form .product-in-bag .message .line, .bag-pay .paying-form .message .line, .paying-form .bag-pay .message .line, .product-description .order-connexion .message .line, .order-connexion .product-description .message .line, .product-bag .order-connexion .message .line, .order-connexion .product-bag .message .line, .product-full-description .order-connexion .message .line, .order-connexion .product-full-description .message .line, .product-in-bag .order-connexion .message .line, .order-connexion .product-in-bag .message .line, .bag-pay .order-connexion .message .line, .order-connexion .bag-pay .message .line {
   height: 18px;
   width: 0;
@@ -423,6 +503,9 @@ body {
     width: 100%;
     padding: 0 10px;
     box-sizing: border-box; }
+    @media (max-width: 768px) {
+      .product-description .informations .text, .product-bag .informations .text, .product-full-description .informations .text, .product-in-bag .informations .text, .bag-pay .informations .text, .product-description .contact-box .informations form, .contact-box .product-description .informations form, .product-bag .contact-box .informations form, .contact-box .product-bag .informations form, .product-full-description .contact-box .informations form, .contact-box .product-full-description .informations form, .product-in-bag .contact-box .informations form, .contact-box .product-in-bag .informations form, .bag-pay .contact-box .informations form, .contact-box .bag-pay .informations form, .product-description .paying-form .informations form, .paying-form .product-description .informations form, .product-bag .paying-form .informations form, .paying-form .product-bag .informations form, .product-full-description .paying-form .informations form, .paying-form .product-full-description .informations form, .product-in-bag .paying-form .informations form, .paying-form .product-in-bag .informations form, .bag-pay .paying-form .informations form, .paying-form .bag-pay .informations form, .product-description .order-connexion .informations form, .order-connexion .product-description .informations form, .product-bag .order-connexion .informations form, .order-connexion .product-bag .informations form, .product-full-description .order-connexion .informations form, .order-connexion .product-full-description .informations form, .product-in-bag .order-connexion .informations form, .order-connexion .product-in-bag .informations form, .bag-pay .order-connexion .informations form, .order-connexion .bag-pay .informations form {
+        padding: 0; } }
   .product-description .informations button, .product-bag .informations button, .product-full-description .informations button, .product-in-bag .informations button, .bag-pay .informations button, .product-description .informations .slider-points .active, .slider-points .product-description .informations .active, .product-bag .informations .slider-points .active, .slider-points .product-bag .informations .active, .product-full-description .informations .slider-points .active, .slider-points .product-full-description .informations .active, .product-in-bag .informations .slider-points .active, .slider-points .product-in-bag .informations .active, .bag-pay .informations .slider-points .active, .slider-points .bag-pay .informations .active {
     color: black;
     box-shadow: inset 0 0 0 2px black; }
@@ -441,6 +524,10 @@ body {
   max-width: 80%;
   max-height: 80%;
   transform: rotate(-15deg); }
+@media (max-width: 768px) {
+  .product-picture {
+    text-align: center;
+    margin-top: 40px; } }
 
 .product-bag .informations .text button, .product-bag .contact-box .informations form button, .contact-box .product-bag .informations form button, .product-bag .paying-form .informations form button, .paying-form .product-bag .informations form button, .product-bag .order-connexion .informations form button, .order-connexion .product-bag .informations form button, .product-bag .informations .text .slider-points .active, .slider-points .product-bag .informations .text .active, .product-bag .contact-box .informations form .slider-points .active, .slider-points .product-bag .contact-box .informations form .active, .contact-box .product-bag .informations form .slider-points .active, .slider-points .contact-box .product-bag .informations form .active, .product-bag .paying-form .informations form .slider-points .active, .slider-points .product-bag .paying-form .informations form .active, .paying-form .product-bag .informations form .slider-points .active, .slider-points .paying-form .product-bag .informations form .active, .product-bag .order-connexion .informations form .slider-points .active, .slider-points .product-bag .order-connexion .informations form .active, .order-connexion .product-bag .informations form .slider-points .active, .slider-points .order-connexion .product-bag .informations form .active {
   display: inline-block;
@@ -469,12 +556,16 @@ body {
     border-bottom-color: red;
     border-left-color: red; }
 
-.product-full-description img {
-  height: 300px;
-  opacity: 0; }
+.product-full-description {
+  text-align: center; }
+  .product-full-description img {
+    height: 300px;
+    max-width: 100%;
+    opacity: 0; }
 
 .product-in-bag .actions, .bag-pay .actions {
-  margin-top: 40px; }
+  margin-top: 40px;
+  text-align: center; }
 .product-in-bag button, .bag-pay button, .product-in-bag .slider-points .active, .slider-points .product-in-bag .active, .bag-pay .slider-points .active, .slider-points .bag-pay .active {
   margin: 5px 10px;
   display: inline-block;
@@ -496,6 +587,9 @@ body {
   border: 5px solid #5bbacf;
   width: 100px;
   height: 60px; }
+  @media (max-width: 768px) {
+    .book {
+      margin-top: 40vh; } }
 
 .book__page {
   position: absolute;
@@ -547,6 +641,12 @@ body {
   padding: 0 50px;
   overflow: scroll;
   opacity: 1; }
+  @media (max-width: 768px) {
+    .bag-products {
+      padding: 0;
+      height: auto; } }
+  .bag-products h4 {
+    margin-top: 0; }
   .bag-products .product {
     display: flex;
     width: 100%;
@@ -576,6 +676,10 @@ body {
 
 .paying-form {
   display: block; }
+  @media (max-width: 768px) {
+    .paying-form {
+      padding: 0;
+      height: auto; } }
   .paying-form form {
     width: 100%; }
     .paying-form form button, .paying-form form .slider-points .active, .slider-points .paying-form form .active {

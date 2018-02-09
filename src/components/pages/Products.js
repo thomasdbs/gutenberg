@@ -15,17 +15,18 @@ class Products extends Component {
     products:[],
     navbar:false,
     toBag:false,
-    inBag:false
+    inBag:false,
+    windowWidth:null
   }
 
   componentWillMount() {
     axios.get(`https://thomasdubois.fr/wp-json/wc/v2/products?consumer_key=ck_ba78c163da1ebcf239b62c6f243e25ee489379d3&consumer_secret=cs_b21c28aa1f27bc0183fbc3fd9c0398faf75aeef0&per_page=50`)
     .then((response) => {
       if (parseInt(this.props.match.params.id) > parseInt(Object.keys(response.data).length)) {
-        this.setState({ currentProduct:0, products:response.data, numberOfProducts:parseInt(Object.keys(response.data).length) })
+        this.setState({ currentProduct:0, products:response.data, numberOfProducts:parseInt(Object.keys(response.data).length), windowWidth:window.innerWidth })
       }
       else {
-        this.setState({ currentProduct:parseInt(this.props.match.params.id), products:response.data, numberOfProducts:parseInt(Object.keys(response.data).length) })
+        this.setState({ currentProduct:parseInt(this.props.match.params.id), products:response.data, numberOfProducts:parseInt(Object.keys(response.data).length), windowWidth:window.innerWidth })
       }
       setTimeout( () => {
         this.newProduct()
@@ -125,10 +126,13 @@ class Products extends Component {
   }
 
   addToBag = () => {
-    this.removeProduct()
-    setTimeout( () => {
-      this.setState({ toBag:true })
-    }, 1300);
+    window.scrollTo(0,0)
+    // setTimeout( () => {
+    //   this.removeProduct()
+    // }, 100);
+    // setTimeout( () => {
+    //   this.setState({ toBag:true })
+    // }, 1300);
   }
 
   endOfPersonalization = e => {
@@ -204,7 +208,7 @@ class Products extends Component {
             </div>
           )}
 
-          {(this.state.numberOfProducts !== null && this.state.currentProduct > 0 && this.state.navbar === false && this.state.toBag === false && this.state.inBag === false) && (
+          {(this.state.numberOfProducts !== null && this.state.currentProduct > 0 && this.state.navbar === false && this.state.toBag === false && this.state.inBag === false && this.state.windowWidth > 768 ) && (
             <button onClick={() => this.changeSlide('previous')} className="link-left">
               <i className="ion-arrow-left-c"></i>
             </button>
@@ -276,7 +280,7 @@ class Products extends Component {
             </div>
           )}
 
-          {(this.state.numberOfProducts !== null && this.state.toBag === false && this.state.inBag === false) && (
+          {(this.state.numberOfProducts !== null && this.state.toBag === false && this.state.inBag === false && this.state.windowWidth > 768) && (
             <div className="product-description">
               <div className="title">
                 <h1>{this.state.products[Object.keys(this.state.products)[this.state.currentProduct]].name}</h1>
@@ -302,6 +306,33 @@ class Products extends Component {
             <Tilt options={{ max : 10, perspective:1000 }} className="product-picture">
                 <img src={this.state.products[Object.keys(this.state.products)[this.state.currentProduct]].images[0].src} alt=""/>
               </Tilt>
+          )}
+
+          {(this.state.numberOfProducts !== null && this.state.toBag === false && this.state.inBag === false && this.state.windowWidth <= 768) && (
+            <div className="product-description">
+              <div className="title">
+                <h1>{this.state.products[Object.keys(this.state.products)[this.state.currentProduct]].name}</h1>
+                <div className="line"></div>
+              </div>
+              <div className="presentation">
+                <h3>{this.state.products[Object.keys(this.state.products)[this.state.currentProduct]].dimensions.width} x {this.state.products[Object.keys(this.state.products)[this.state.currentProduct]].dimensions.height} cm</h3>
+              </div>
+              <div className="informations">
+                <div className="text">
+                  <p>{renderHTML(this.state.products[Object.keys(this.state.products)[this.state.currentProduct]].description)}</p>
+                  <p>{this.state.products[Object.keys(this.state.products)[this.state.currentProduct]].price} €</p>
+                  <button onClick={() => this.addToBag()}>
+                    <i className="ion-bag"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {(this.state.numberOfProducts !== null && this.state.currentProduct > 0 && this.state.navbar === false && this.state.toBag === false && this.state.inBag === false && this.state.windowWidth <= 768) && (
+            <button onClick={() => this.changeSlide('previous')} className="link-left">
+              <i className="ion-arrow-left-c"></i>
+            </button>
           )}
 
           {(this.state.numberOfProducts !== null && this.state.currentProduct < this.state.numberOfProducts-1 && this.state.navbar === false && this.state.toBag === false && this.state.inBag === false) && (

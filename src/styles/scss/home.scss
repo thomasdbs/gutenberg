@@ -5,6 +5,10 @@
     left: 60px;
     margin: 0;
 
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+
     & button {
       @extend .link;
       color: black;
@@ -34,6 +38,10 @@
   justify-content: center;
   align-items: flex-end;
   cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    height: calc(50% - 40px);
+  }
 
   & button{
     @extend .link;
@@ -68,7 +76,7 @@
     opacity: 0;
     word-break: break-word;
 
-    @media screen and (max-width: 640px) {
+    @media screen and (max-width: 768px) {
       display: none;
     }
 
@@ -97,9 +105,12 @@
   background-color: $color1;
 
 
-  &:hover {
-    transform: translate(-20px,-20px);
+  @media screen and (min-width: 769px) {
+    &:hover {
+      transform: translate(-20px,-20px);
+    }
   }
+
 
   & .title-container {
     justify-content: flex-start;
@@ -112,6 +123,10 @@
   @extend .item;
   background-color: $color2;
   margin-top: 10vh;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+  }
 
   &:hover {
     transform: translate(20px,-20px);

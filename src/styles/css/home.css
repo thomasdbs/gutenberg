@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$color1".
-        on line 13 of src/styles/scss/home.scss
+        on line 17 of src/styles/scss/home.scss
 
-8:     & button {
-9:       @extend .link;
-10:       color: black;
-11: 
-12:       &:hover {
-13:         color: $color1;
-14:       }
+12:     & button {
+13:       @extend .link;
+14:       color: black;
 15: 
-16:       &:hover::before {
-17:         border-top-color: $color1;
-18:         border-right-color: $color1;
+16:       &:hover {
+17:         color: $color1;
+18:       }
+19: 
+20:       &:hover::before {
+21:         border-top-color: $color1;
+22:         border-right-color: $color1;
 
 Backtrace:
-src/styles/scss/home.scss:13
+src/styles/scss/home.scss:17
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/script/tree/node.rb:50:in `perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -91,4 +91,4 @@ src/styles/scss/home.scss:13
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color1\".\A         on line 13 of src/styles/scss/home.scss\A \A 8:     & button {\A 9:       @extend .link;\A 10:       color: black;\A 11: \A 12:       &:hover {\A 13:         color: $color1;\A 14:       }\A 15: \A 16:       &:hover::before {\A 17:         border-top-color: $color1;\A 18:         border-right-color: $color1;"; }
+  content: "Error: Undefined variable: \"$color1\".\A         on line 17 of src/styles/scss/home.scss\A \A 12:     & button {\A 13:       @extend .link;\A 14:       color: black;\A 15: \A 16:       &:hover {\A 17:         color: $color1;\A 18:       }\A 19: \A 20:       &:hover::before {\A 21:         border-top-color: $color1;\A 22:         border-right-color: $color1;"; }

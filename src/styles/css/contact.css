@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$color1".
-        on line 29 of src/styles/scss/contact.scss
+        on line 30 of src/styles/scss/contact.scss
 
-24:     }
-25: 
-26:     & .line {
-27:       height: 18px;
-28:       width: 0;
-29:       background-color: $color1;
-30:     }
-31: 
-32:   }
-33: 
-34:   & .message {
+25:     }
+26: 
+27:     & .line {
+28:       height: 18px;
+29:       width: 0;
+30:       background-color: $color1;
+31:     }
+32: 
+33:   }
+34: 
+35:   & .message {
 
 Backtrace:
-src/styles/scss/contact.scss:29
+src/styles/scss/contact.scss:30
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/script/tree/node.rb:50:in `perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -91,4 +91,4 @@ src/styles/scss/contact.scss:29
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color1\".\A         on line 29 of src/styles/scss/contact.scss\A \A 24:     }\A 25: \A 26:     & .line {\A 27:       height: 18px;\A 28:       width: 0;\A 29:       background-color: $color1;\A 30:     }\A 31: \A 32:   }\A 33: \A 34:   & .message {"; }
+  content: "Error: Undefined variable: \"$color1\".\A         on line 30 of src/styles/scss/contact.scss\A \A 25:     }\A 26: \A 27:     & .line {\A 28:       height: 18px;\A 29:       width: 0;\A 30:       background-color: $color1;\A 31:     }\A 32: \A 33:   }\A 34: \A 35:   & .message {"; }

@@ -16,6 +16,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    padding: 0 30px;
+    border-top: 80px solid white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
 }
 
 
@@ -164,16 +173,36 @@ $dark: black;
       margin-left: 140px;
     }
 
+    @media screen and (max-width: 768px) {
+
+      &[data-margin] {
+        margin-left: 0;
+      }
+
+      width: 100%;
+
+    }
+
     & .navbar-geometry {
       background-color: $color1;
       height: 50px;
       display: inline-block;
+
+      @media screen and (max-width: 768px) {
+        height: 40px;
+      }
+
     }
 
     & .navbar-link {
       margin-left: -12px;
       font-size: 30px;
       opacity: 0;
+
+      @media screen and (max-width: 768px) {
+        font-size: 20px;
+      }
+
     }
 
   }

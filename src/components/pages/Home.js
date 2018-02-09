@@ -11,7 +11,12 @@ class Home extends Component {
 
   componentDidMount() {
     const boxesWidth = window.innerWidth / 4
-    TweenMax.to('.item-left, .item-right', 1, { width:`${boxesWidth}px` })
+
+    if (window.innerWidth <= 768) {
+      TweenMax.to('.item-left, .item-right', 1, { width:'100%' })
+    }else {
+      TweenMax.to('.item-left, .item-right', 1, { width:`${boxesWidth}px` })
+    }
     setTimeout( () => { document.querySelectorAll('.item-left, .item-right').forEach( (b) => { b.style.padding = '20px' } ) }, 1000)
     TweenMax.to('.item-left *, .item-right *', 1, { opacity:1 }).delay(1.5)
   }
