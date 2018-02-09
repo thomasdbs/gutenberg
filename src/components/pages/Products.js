@@ -127,12 +127,12 @@ class Products extends Component {
 
   addToBag = () => {
     window.scrollTo(0,0)
-    // setTimeout( () => {
-    //   this.removeProduct()
-    // }, 100);
-    // setTimeout( () => {
-    //   this.setState({ toBag:true })
-    // }, 1300);
+    setTimeout( () => {
+      this.removeProduct()
+    }, 100);
+    setTimeout( () => {
+      this.setState({ toBag:true })
+    }, 1300);
   }
 
   endOfPersonalization = e => {
