@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import Home from './components/pages/Home';
 import Contact from './components/pages/Contact';
 import Products from './components/pages/Products';
@@ -10,7 +10,7 @@ import ShoppingBag from './components/pages/ShoppingBag';
 
 const Root = () => {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/histoire" component={History} />
@@ -20,7 +20,7 @@ const Root = () => {
                 <Route exact path="/contact" component={Contact} />
                 <Route exact path="/mentions-legales" component={LegalNotice} />
             </Switch>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 

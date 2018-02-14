@@ -394,7 +394,8 @@ body {
   cursor: pointer;
   transition: all 0.2s;
   outline: none;
-  border: 3px solid #5bbacf; }
+  border: 3px solid #5bbacf;
+  z-index: 2; }
   @media (max-width: 768px) {
     .product-slider, .link-left, .link-right {
       margin: 0 0 20px 0 !important; } }
@@ -443,7 +444,7 @@ body {
       border-radius: 6px;
       padding: 5px 0;
       position: absolute;
-      z-index: 1;
+      z-index: 2;
       bottom: 180%;
       left: 50%;
       margin-left: -60px;

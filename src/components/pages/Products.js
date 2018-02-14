@@ -20,7 +20,7 @@ class Products extends Component {
   }
 
   componentWillMount() {
-    axios.get(`https://thomasdubois.fr/wp-json/wc/v2/products?consumer_key=ck_ba78c163da1ebcf239b62c6f243e25ee489379d3&consumer_secret=cs_b21c28aa1f27bc0183fbc3fd9c0398faf75aeef0&per_page=50`)
+    axios.get(`https://thomasdubois.fr/back/wp-json/wc/v2/products?consumer_key=ck_051df3b7774a3d3dc4c40ecf9536bc20d2af3050&consumer_secret=cs_68c3b9d2d09bf4c9085146ed80740f0ac41800a7&per_page=50`)
     .then((response) => {
       if (parseInt(this.props.match.params.id) > parseInt(Object.keys(response.data).length)) {
         this.setState({ currentProduct:0, products:response.data, numberOfProducts:parseInt(Object.keys(response.data).length), windowWidth:window.innerWidth })
@@ -126,7 +126,6 @@ class Products extends Component {
   }
 
   addToBag = () => {
-    window.scrollTo(0,0)
     setTimeout( () => {
       this.removeProduct()
     }, 100);

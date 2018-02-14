@@ -13,14 +13,7 @@
     "react-scripts": "1.1.0",
     "react-tilt": "^0.1.4"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/thomasdbs/gutenberg.git"
-  },
-  "bugs": {
-    "url": "https://github.com/thomasdbs/gutenberg/issues"
-  },
-  "homepage": "https://thomasdbs.github.io/gutenberg",
+  "homepage": "https://thomasdubois.fr/gutenberg",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
